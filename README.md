@@ -105,5 +105,5 @@ MIT License
 
 ---
 
-**تم الإنشاء بواسطة | Created by:** Manus AI  
+**تم الإنشاء بواسطة | Created by:** AmmarMohammed 
 **الإصدار | Version:** 1.0.0
