@@ -1,0 +1,58 @@
+{
+  "app": {
+    "title": "تعلم Termux",
+    "subtitle": "تطبيق شامل لتعلم أوامر Termux"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "favorites": "المفضلة",
+    "search": "بحث",
+    "settings": "إعدادات"
+  },
+  "categories": {
+    "linux": "استخدام لينكس الأساسي",
+    "package": "إدارة الحزم",
+    "scripting": "البرمجة والسكريبتات",
+    "networking": "الشبكات والاتصال",
+    "api": "واجهة Termux API",
+    "server": "الخوادم والويب",
+    "gui": "الواجهة الرسومية",
+    "custom": "التخصيص والإعدادات",
+    "docker": "Docker والحاويات",
+    "monitoring": "المراقبة والأداء"
+  },
+  "actions": {
+    "copy": "نسخ",
+    "share": "مشاركة",
+    "favorite": "أضف إلى المفضلة",
+    "unfavorite": "إزالة من المفضلة",
+    "search": "بحث",
+    "clear": "مسح"
+  },
+  "messages": {
+    "copied": "تم النسخ إلى الحافظة",
+    "added": "تمت الإضافة إلى المفضلة",
+    "removed": "تمت الإزالة من المفضلة",
+    "noResults": "لا توجد نتائج",
+    "noFavorites": "لا توجد أوامر مفضلة",
+    "loading": "جاري التحميل..."
+  },
+  "sections": {
+    "examples": "أمثلة",
+    "tips": "نصائح",
+    "errors": "الأخطاء الشائعة",
+    "syntax": "الصيغة",
+    "description": "الوصف"
+  },
+  "difficulty": {
+    "beginner": "مبتدئ",
+    "intermediate": "متوسط",
+    "advanced": "متقدم"
+  },
+  "settings": {
+    "language": "اللغة",
+    "theme": "المظهر",
+    "about": "حول التطبيق",
+    "version": "الإصدار"
+  }
+}

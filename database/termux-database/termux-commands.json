@@ -1,0 +1,774 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-26",
+    "language": "ar-en",
+    "totalCategories": 10,
+    "totalCommands": 35,
+    "description": "قاعدة بيانات شاملة لأوامر Termux - Comprehensive Termux Commands Database"
+  },
+  "categories": [
+    {
+      "id": "linux",
+      "titleAr": "استخدام لينكس الأساسي",
+      "titleEn": "Basic Linux Usage",
+      "descriptionAr": "أوامر أساسية لإدارة الملفات والمجلدات والتنقل في النظام",
+      "descriptionEn": "Basic commands for file and folder management and system navigation",
+      "icon": "terminal",
+      "difficulty": "beginner",
+      "order": 1
+    },
+    {
+      "id": "package",
+      "titleAr": "إدارة الحزم",
+      "titleEn": "Package Management",
+      "descriptionAr": "تحديث وتثبيت وإزالة الحزم والبرامج",
+      "descriptionEn": "Update, install and remove packages and software",
+      "icon": "package",
+      "difficulty": "beginner",
+      "order": 2
+    },
+    {
+      "id": "scripting",
+      "titleAr": "البرمجة والسكريبتات",
+      "titleEn": "Programming & Scripting",
+      "descriptionAr": "إعداد بيئات البرمجة المختلفة وتطوير التطبيقات",
+      "descriptionEn": "Setup different programming environments and develop applications",
+      "icon": "code",
+      "difficulty": "intermediate",
+      "order": 3
+    },
+    {
+      "id": "networking",
+      "titleAr": "الشبكات والاتصال",
+      "titleEn": "Networking & Connectivity",
+      "descriptionAr": "أدوات الشبكة والاتصال والتشخيص",
+      "descriptionEn": "Network tools, connectivity and diagnostics",
+      "icon": "wifi",
+      "difficulty": "intermediate",
+      "order": 4
+    },
+    {
+      "id": "api",
+      "titleAr": "واجهة Termux API",
+      "titleEn": "Termux API",
+      "descriptionAr": "الوصول إلى ميزات الجهاز والعتاد",
+      "descriptionEn": "Access device features and hardware capabilities",
+      "icon": "settings",
+      "difficulty": "advanced",
+      "order": 5
+    },
+    {
+      "id": "server",
+      "titleAr": "الخوادم والويب",
+      "titleEn": "Servers & Web",
+      "descriptionAr": "إعداد خوادم الويب والتطبيقات",
+      "descriptionEn": "Setup web servers and application servers",
+      "icon": "server",
+      "difficulty": "advanced",
+      "order": 6
+    },
+    {
+      "id": "gui",
+      "titleAr": "الواجهة الرسومية",
+      "titleEn": "Linux GUI",
+      "descriptionAr": "دعم الواجهات الرسومية والتطبيقات البصرية",
+      "descriptionEn": "Graphical interface support and visual applications",
+      "icon": "monitor",
+      "difficulty": "advanced",
+      "order": 7
+    },
+    {
+      "id": "custom",
+      "titleAr": "التخصيص والإعدادات",
+      "titleEn": "Customization & Settings",
+      "descriptionAr": "تخصيص مظهر وإعدادات Termux",
+      "descriptionEn": "Customize Termux appearance and settings",
+      "icon": "palette",
+      "difficulty": "beginner",
+      "order": 8
+    },
+    {
+      "id": "docker",
+      "titleAr": "Docker والحاويات",
+      "titleEn": "Docker & Containers",
+      "descriptionAr": "تثبيت وتشغيل الحاويات والأنظمة المعزولة",
+      "descriptionEn": "Install and run containers and isolated systems",
+      "icon": "box",
+      "difficulty": "advanced",
+      "order": 9
+    },
+    {
+      "id": "monitoring",
+      "titleAr": "المراقبة والأداء",
+      "titleEn": "Monitoring & Performance",
+      "descriptionAr": "مراقبة الموارد والعمليات والأداء",
+      "descriptionEn": "Monitor resources, processes and performance",
+      "icon": "activity",
+      "difficulty": "intermediate",
+      "order": 10
+    }
+  ],
+  "commands": [
+    {
+      "id": "linux-1",
+      "categoryId": "linux",
+      "titleAr": "قائمة الملفات",
+      "titleEn": "List Files",
+      "descriptionAr": "عرض قائمة بالملفات والمجلدات في المجلد الحالي",
+      "descriptionEn": "Display a list of files and folders in the current directory",
+      "command": "ls",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "ls",
+          "commandEn": "ls",
+          "descriptionAr": "عرض الملفات البسيط",
+          "descriptionEn": "Simple file listing"
+        },
+        {
+          "commandAr": "ls -la",
+          "commandEn": "ls -la",
+          "descriptionAr": "عرض جميع الملفات مع التفاصيل والملفات المخفية",
+          "descriptionEn": "Show all files with details and hidden files"
+        },
+        {
+          "commandAr": "ls -lh",
+          "commandEn": "ls -lh",
+          "descriptionAr": "عرض حجم الملفات بصيغة قابلة للقراءة",
+          "descriptionEn": "Show file sizes in human-readable format"
+        }
+      ],
+      "tips": [
+        {
+          "tipAr": "استخدم -a لعرض الملفات المخفية",
+          "tipEn": "Use -a to show hidden files"
+        },
+        {
+          "tipAr": "استخدم -l لعرض التفاصيل الكاملة",
+          "tipEn": "Use -l to show full details"
+        }
+      ],
+      "commonErrors": [
+        {
+          "errorAr": "لا يوجد ملف أو مجلد",
+          "errorEn": "No such file or directory",
+          "solutionAr": "تأكد من المسار الصحيح",
+          "solutionEn": "Verify the correct path"
+        }
+      ]
+    },
+    {
+      "id": "linux-2",
+      "categoryId": "linux",
+      "titleAr": "تغيير المجلد",
+      "titleEn": "Change Directory",
+      "descriptionAr": "الانتقال إلى مجلد آخر",
+      "descriptionEn": "Navigate to another directory",
+      "command": "cd",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "cd /home",
+          "commandEn": "cd /home",
+          "descriptionAr": "الانتقال إلى مجلد home",
+          "descriptionEn": "Navigate to home folder"
+        },
+        {
+          "commandAr": "cd ..",
+          "commandEn": "cd ..",
+          "descriptionAr": "الانتقال إلى المجلد الأب",
+          "descriptionEn": "Go to parent directory"
+        },
+        {
+          "commandAr": "cd ~",
+          "commandEn": "cd ~",
+          "descriptionAr": "الانتقال إلى مجلد المستخدم الرئيسي",
+          "descriptionEn": "Go to user home directory"
+        }
+      ],
+      "tips": [
+        {
+          "tipAr": "استخدم cd - للعودة إلى المجلد السابق",
+          "tipEn": "Use cd - to return to previous directory"
+        }
+      ],
+      "commonErrors": []
+    },
+    {
+      "id": "linux-3",
+      "categoryId": "linux",
+      "titleAr": "إنشاء مجلد",
+      "titleEn": "Make Directory",
+      "descriptionAr": "إنشاء مجلد جديد",
+      "descriptionEn": "Create a new directory",
+      "command": "mkdir",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "mkdir my_folder",
+          "commandEn": "mkdir my_folder",
+          "descriptionAr": "إنشاء مجلد باسم my_folder",
+          "descriptionEn": "Create a folder named my_folder"
+        },
+        {
+          "commandAr": "mkdir -p path/to/folder",
+          "commandEn": "mkdir -p path/to/folder",
+          "descriptionAr": "إنشاء مجلدات متعددة المستويات",
+          "descriptionEn": "Create nested directories"
+        }
+      ],
+      "tips": [
+        {
+          "tipAr": "استخدم -p لإنشاء المجلدات الأب تلقائياً",
+          "tipEn": "Use -p to create parent directories automatically"
+        }
+      ],
+      "commonErrors": []
+    },
+    {
+      "id": "linux-4",
+      "categoryId": "linux",
+      "titleAr": "حذف الملفات",
+      "titleEn": "Remove Files",
+      "descriptionAr": "حذف ملف أو مجلد",
+      "descriptionEn": "Delete a file or directory",
+      "command": "rm",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "rm file.txt",
+          "commandEn": "rm file.txt",
+          "descriptionAr": "حذف ملف",
+          "descriptionEn": "Delete a file"
+        },
+        {
+          "commandAr": "rm -r folder",
+          "commandEn": "rm -r folder",
+          "descriptionAr": "حذف مجلد بكل محتوياته",
+          "descriptionEn": "Delete a directory with all contents"
+        },
+        {
+          "commandAr": "rm -f file.txt",
+          "commandEn": "rm -f file.txt",
+          "descriptionAr": "حذف الملف بدون تأكيد",
+          "descriptionEn": "Force delete without confirmation"
+        }
+      ],
+      "tips": [
+        {
+          "tipAr": "كن حذراً عند استخدام rm -rf",
+          "tipEn": "Be careful with rm -rf"
+        }
+      ],
+      "commonErrors": []
+    },
+    {
+      "id": "linux-5",
+      "categoryId": "linux",
+      "titleAr": "نسخ الملفات",
+      "titleEn": "Copy Files",
+      "descriptionAr": "نسخ ملف أو مجلد",
+      "descriptionEn": "Copy a file or directory",
+      "command": "cp",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "cp file.txt file_copy.txt",
+          "commandEn": "cp file.txt file_copy.txt",
+          "descriptionAr": "نسخ ملف",
+          "descriptionEn": "Copy a file"
+        },
+        {
+          "commandAr": "cp -r folder folder_copy",
+          "commandEn": "cp -r folder folder_copy",
+          "descriptionAr": "نسخ مجلد بكل محتوياته",
+          "descriptionEn": "Copy a directory recursively"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "linux-6",
+      "categoryId": "linux",
+      "titleAr": "نقل الملفات",
+      "titleEn": "Move Files",
+      "descriptionAr": "نقل أو إعادة تسمية ملف",
+      "descriptionEn": "Move or rename a file",
+      "command": "mv",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "mv old_name.txt new_name.txt",
+          "commandEn": "mv old_name.txt new_name.txt",
+          "descriptionAr": "إعادة تسمية ملف",
+          "descriptionEn": "Rename a file"
+        },
+        {
+          "commandAr": "mv file.txt /path/to/destination",
+          "commandEn": "mv file.txt /path/to/destination",
+          "descriptionAr": "نقل ملف إلى مجلد آخر",
+          "descriptionEn": "Move file to another directory"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "package-1",
+      "categoryId": "package",
+      "titleAr": "تحديث قوائم الحزم",
+      "titleEn": "Update Package Lists",
+      "descriptionAr": "تحديث قوائم الحزم المتاحة",
+      "descriptionEn": "Update available package lists",
+      "command": "pkg update",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "pkg update",
+          "commandEn": "pkg update",
+          "descriptionAr": "تحديث قوائم الحزم",
+          "descriptionEn": "Update package lists"
+        }
+      ],
+      "tips": [
+        {
+          "tipAr": "قم بتشغيل هذا الأمر بانتظام",
+          "tipEn": "Run this command regularly"
+        }
+      ],
+      "commonErrors": []
+    },
+    {
+      "id": "package-2",
+      "categoryId": "package",
+      "titleAr": "ترقية الحزم",
+      "titleEn": "Upgrade Packages",
+      "descriptionAr": "ترقية جميع الحزم المثبتة",
+      "descriptionEn": "Upgrade all installed packages",
+      "command": "pkg upgrade",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "pkg upgrade",
+          "commandEn": "pkg upgrade",
+          "descriptionAr": "ترقية جميع الحزم",
+          "descriptionEn": "Upgrade all packages"
+        },
+        {
+          "commandAr": "pkg upgrade -y",
+          "commandEn": "pkg upgrade -y",
+          "descriptionAr": "الموافقة تلقائياً على الترقية",
+          "descriptionEn": "Auto-confirm upgrade"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "package-3",
+      "categoryId": "package",
+      "titleAr": "تثبيت الحزم",
+      "titleEn": "Install Packages",
+      "descriptionAr": "تثبيت حزمة جديدة",
+      "descriptionEn": "Install a new package",
+      "command": "pkg install",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "pkg install python",
+          "commandEn": "pkg install python",
+          "descriptionAr": "تثبيت بايثون",
+          "descriptionEn": "Install Python"
+        },
+        {
+          "commandAr": "pkg install git curl wget",
+          "commandEn": "pkg install git curl wget",
+          "descriptionAr": "تثبيت عدة حزم",
+          "descriptionEn": "Install multiple packages"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "scripting-1",
+      "categoryId": "scripting",
+      "titleAr": "تثبيت بايثون",
+      "titleEn": "Install Python",
+      "descriptionAr": "تثبيت لغة البرمجة بايثون",
+      "descriptionEn": "Install Python programming language",
+      "command": "pkg install python",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "pkg install python",
+          "commandEn": "pkg install python",
+          "descriptionAr": "تثبيت أحدث إصدار من بايثون",
+          "descriptionEn": "Install latest Python version"
+        },
+        {
+          "commandAr": "python --version",
+          "commandEn": "python --version",
+          "descriptionAr": "التحقق من إصدار بايثون",
+          "descriptionEn": "Check Python version"
+        }
+      ],
+      "tips": [
+        {
+          "tipAr": "استخدم pip لتثبيت المكتبات",
+          "tipEn": "Use pip to install libraries"
+        }
+      ],
+      "commonErrors": []
+    },
+    {
+      "id": "scripting-2",
+      "categoryId": "scripting",
+      "titleAr": "تثبيت Node.js",
+      "titleEn": "Install Node.js",
+      "descriptionAr": "تثبيت Node.js وnpm",
+      "descriptionEn": "Install Node.js and npm",
+      "command": "pkg install nodejs",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "pkg install nodejs",
+          "commandEn": "pkg install nodejs",
+          "descriptionAr": "تثبيت Node.js",
+          "descriptionEn": "Install Node.js"
+        },
+        {
+          "commandAr": "node --version",
+          "commandEn": "node --version",
+          "descriptionAr": "التحقق من إصدار Node.js",
+          "descriptionEn": "Check Node.js version"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "networking-1",
+      "categoryId": "networking",
+      "titleAr": "عرض معلومات الشبكة",
+      "titleEn": "Show Network Info",
+      "descriptionAr": "عرض معلومات الشبكة وعناوين IP",
+      "descriptionEn": "Display network information and IP addresses",
+      "command": "ifconfig",
+      "difficulty": "intermediate",
+      "examples": [
+        {
+          "commandAr": "ifconfig",
+          "commandEn": "ifconfig",
+          "descriptionAr": "عرض جميع واجهات الشبكة",
+          "descriptionEn": "Show all network interfaces"
+        },
+        {
+          "commandAr": "ip addr show",
+          "commandEn": "ip addr show",
+          "descriptionAr": "عرض عناوين IP",
+          "descriptionEn": "Show IP addresses"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "networking-2",
+      "categoryId": "networking",
+      "titleAr": "اختبار الاتصال",
+      "titleEn": "Test Connection",
+      "descriptionAr": "اختبار الاتصال بخادم",
+      "descriptionEn": "Test connection to a server",
+      "command": "ping",
+      "difficulty": "intermediate",
+      "examples": [
+        {
+          "commandAr": "ping google.com",
+          "commandEn": "ping google.com",
+          "descriptionAr": "اختبار الاتصال بـ Google",
+          "descriptionEn": "Test connection to Google"
+        },
+        {
+          "commandAr": "ping -c 4 8.8.8.8",
+          "commandEn": "ping -c 4 8.8.8.8",
+          "descriptionAr": "إرسال 4 حزم فقط",
+          "descriptionEn": "Send only 4 packets"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "api-1",
+      "categoryId": "api",
+      "titleAr": "تثبيت Termux API",
+      "titleEn": "Install Termux API",
+      "descriptionAr": "تثبيت حزمة Termux API للوصول للعتاد",
+      "descriptionEn": "Install Termux API package for hardware access",
+      "command": "pkg install termux-api",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "pkg install termux-api",
+          "commandEn": "pkg install termux-api",
+          "descriptionAr": "تثبيت Termux API",
+          "descriptionEn": "Install Termux API"
+        }
+      ],
+      "tips": [
+        {
+          "tipAr": "تحتاج أيضاً إلى تطبيق Termux:API",
+          "tipEn": "You also need Termux:API app"
+        }
+      ],
+      "commonErrors": []
+    },
+    {
+      "id": "api-2",
+      "categoryId": "api",
+      "titleAr": "التقاط صورة",
+      "titleEn": "Take Photo",
+      "descriptionAr": "التقاط صورة باستخدام الكاميرا",
+      "descriptionEn": "Capture a photo using the camera",
+      "command": "termux-camera-photo",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "termux-camera-photo photo.jpg",
+          "commandEn": "termux-camera-photo photo.jpg",
+          "descriptionAr": "التقاط صورة وحفظها",
+          "descriptionEn": "Take and save a photo"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "server-1",
+      "categoryId": "server",
+      "titleAr": "تثبيت Apache",
+      "titleEn": "Install Apache",
+      "descriptionAr": "تثبيت خادم Apache الويب",
+      "descriptionEn": "Install Apache web server",
+      "command": "pkg install apache2",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "pkg install apache2",
+          "commandEn": "pkg install apache2",
+          "descriptionAr": "تثبيت Apache",
+          "descriptionEn": "Install Apache"
+        },
+        {
+          "commandAr": "apachectl start",
+          "commandEn": "apachectl start",
+          "descriptionAr": "بدء خادم Apache",
+          "descriptionEn": "Start Apache server"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "server-2",
+      "categoryId": "server",
+      "titleAr": "تثبيت Nginx",
+      "titleEn": "Install Nginx",
+      "descriptionAr": "تثبيت خادم Nginx الخفيف",
+      "descriptionEn": "Install lightweight Nginx server",
+      "command": "pkg install nginx",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "pkg install nginx",
+          "commandEn": "pkg install nginx",
+          "descriptionAr": "تثبيت Nginx",
+          "descriptionEn": "Install Nginx"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "gui-1",
+      "categoryId": "gui",
+      "titleAr": "إعداد X11",
+      "titleEn": "Setup X11",
+      "descriptionAr": "تثبيت دعم الواجهة الرسومية X11",
+      "descriptionEn": "Install X11 graphical interface support",
+      "command": "pkg install x11-repo",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "pkg install x11-repo",
+          "commandEn": "pkg install x11-repo",
+          "descriptionAr": "تثبيت مستودع X11",
+          "descriptionEn": "Install X11 repository"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "gui-2",
+      "categoryId": "gui",
+      "titleAr": "تثبيت VNC",
+      "titleEn": "Install VNC",
+      "descriptionAr": "تثبيت خادم VNC للوصول البعيد",
+      "descriptionEn": "Install VNC server for remote access",
+      "command": "pkg install tigervnc",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "pkg install tigervnc",
+          "commandEn": "pkg install tigervnc",
+          "descriptionAr": "تثبيت TigerVNC",
+          "descriptionEn": "Install TigerVNC"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "custom-1",
+      "categoryId": "custom",
+      "titleAr": "تخصيص المظهر",
+      "titleEn": "Customize Appearance",
+      "descriptionAr": "تخصيص ألوان وخطوط Termux",
+      "descriptionEn": "Customize Termux colors and fonts",
+      "command": "termux-styling",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "termux-styling",
+          "commandEn": "termux-styling",
+          "descriptionAr": "فتح قائمة التخصيص",
+          "descriptionEn": "Open customization menu"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "custom-2",
+      "categoryId": "custom",
+      "titleAr": "تثبيت الخطوط",
+      "titleEn": "Install Fonts",
+      "descriptionAr": "تثبيت خطوط جديدة",
+      "descriptionEn": "Install new fonts",
+      "command": "pkg install fonts-noto",
+      "difficulty": "beginner",
+      "examples": [
+        {
+          "commandAr": "pkg install fonts-noto",
+          "commandEn": "pkg install fonts-noto",
+          "descriptionAr": "تثبيت خطوط Noto",
+          "descriptionEn": "Install Noto fonts"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "docker-1",
+      "categoryId": "docker",
+      "titleAr": "تثبيت Ubuntu",
+      "titleEn": "Install Ubuntu",
+      "descriptionAr": "تثبيت نظام Ubuntu داخل Termux",
+      "descriptionEn": "Install Ubuntu system inside Termux",
+      "command": "proot-distro install ubuntu",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "proot-distro install ubuntu",
+          "commandEn": "proot-distro install ubuntu",
+          "descriptionAr": "تثبيت Ubuntu",
+          "descriptionEn": "Install Ubuntu"
+        },
+        {
+          "commandAr": "proot-distro login ubuntu",
+          "commandEn": "proot-distro login ubuntu",
+          "descriptionAr": "الدخول إلى Ubuntu",
+          "descriptionEn": "Login to Ubuntu"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "docker-2",
+      "categoryId": "docker",
+      "titleAr": "تثبيت Debian",
+      "titleEn": "Install Debian",
+      "descriptionAr": "تثبيت نظام Debian داخل Termux",
+      "descriptionEn": "Install Debian system inside Termux",
+      "command": "proot-distro install debian",
+      "difficulty": "advanced",
+      "examples": [
+        {
+          "commandAr": "proot-distro install debian",
+          "commandEn": "proot-distro install debian",
+          "descriptionAr": "تثبيت Debian",
+          "descriptionEn": "Install Debian"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "monitoring-1",
+      "categoryId": "monitoring",
+      "titleAr": "مراقب الموارد",
+      "titleEn": "Resource Monitor",
+      "descriptionAr": "مراقبة استخدام الموارد والعمليات",
+      "descriptionEn": "Monitor resource usage and processes",
+      "command": "htop",
+      "difficulty": "intermediate",
+      "examples": [
+        {
+          "commandAr": "pkg install htop",
+          "commandEn": "pkg install htop",
+          "descriptionAr": "تثبيت htop",
+          "descriptionEn": "Install htop"
+        },
+        {
+          "commandAr": "htop",
+          "commandEn": "htop",
+          "descriptionAr": "تشغيل مراقب الموارد",
+          "descriptionEn": "Run resource monitor"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    },
+    {
+      "id": "monitoring-2",
+      "categoryId": "monitoring",
+      "titleAr": "معلومات النظام",
+      "titleEn": "System Information",
+      "descriptionAr": "عرض معلومات النظام",
+      "descriptionEn": "Display system information",
+      "command": "uname -a",
+      "difficulty": "intermediate",
+      "examples": [
+        {
+          "commandAr": "uname -a",
+          "commandEn": "uname -a",
+          "descriptionAr": "عرض جميع معلومات النظام",
+          "descriptionEn": "Show all system information"
+        },
+        {
+          "commandAr": "cat /proc/cpuinfo",
+          "commandEn": "cat /proc/cpuinfo",
+          "descriptionAr": "عرض معلومات المعالج",
+          "descriptionEn": "Show CPU information"
+        }
+      ],
+      "tips": [],
+      "commonErrors": []
+    }
+  ]
+}

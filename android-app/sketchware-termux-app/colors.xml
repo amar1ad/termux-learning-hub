@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors (Termux Green) -->
+    <color name="primary">#00FF00</color>
+    <color name="primary_dark">#00CC00</color>
+    <color name="primary_light">#66FF66</color>
+
+    <!-- Accent Colors -->
+    <color name="accent">#00DD00</color>
+    <color name="accent_light">#44FF44</color>
+
+    <!-- Neutral Colors -->
+    <color name="background">#000000</color>
+    <color name="surface">#1A1A1A</color>
+    <color name="surface_light">#2D2D2D</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_tertiary">#808080</color>
+    <color name="text_hint">#666666</color>
+
+    <!-- Status Colors -->
+    <color name="success">#00FF00</color>
+    <color name="warning">#FFA500</color>
+    <color name="error">#FF3333</color>
+    <color name="info">#00CCFF</color>
+
+    <!-- Border Colors -->
+    <color name="border">#333333</color>
+    <color name="border_light">#444444</color>
+    <color name="divider">#1F1F1F</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#80FFFFFF</color>
+
+    <!-- Category Colors -->
+    <color name="category_linux">#00FF00</color>
+    <color name="category_package">#00DD00</color>
+    <color name="category_scripting">#00BB00</color>
+    <color name="category_networking">#00AA00</color>
+    <color name="category_api">#009900</color>
+    <color name="category_server">#008800</color>
+    <color name="category_gui">#007700</color>
+    <color name="category_custom">#006600</color>
+    <color name="category_docker">#005500</color>
+    <color name="category_monitoring">#004400</color>
+
+    <!-- Light Theme Colors -->
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_surface">#F5F5F5</color>
+    <color name="light_surface_light">#EEEEEE</color>
+    <color name="light_text_primary">#212121</color>
+    <color name="light_text_secondary">#757575</color>
+    <color name="light_text_tertiary">#9E9E9E</color>
+    <color name="light_border">#E0E0E0</color>
+
+    <!-- Transparency -->
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#80000000</color>
+
+</resources>

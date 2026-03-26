@@ -1,0 +1,58 @@
+{
+  "app": {
+    "title": "Termux Learning",
+    "subtitle": "Comprehensive app for learning Termux commands"
+  },
+  "nav": {
+    "home": "Home",
+    "favorites": "Favorites",
+    "search": "Search",
+    "settings": "Settings"
+  },
+  "categories": {
+    "linux": "Basic Linux Usage",
+    "package": "Package Management",
+    "scripting": "Programming & Scripting",
+    "networking": "Networking & Connectivity",
+    "api": "Termux API",
+    "server": "Servers & Web",
+    "gui": "Linux GUI",
+    "custom": "Customization & Settings",
+    "docker": "Docker & Containers",
+    "monitoring": "Monitoring & Performance"
+  },
+  "actions": {
+    "copy": "Copy",
+    "share": "Share",
+    "favorite": "Add to Favorites",
+    "unfavorite": "Remove from Favorites",
+    "search": "Search",
+    "clear": "Clear"
+  },
+  "messages": {
+    "copied": "Copied to clipboard",
+    "added": "Added to favorites",
+    "removed": "Removed from favorites",
+    "noResults": "No results found",
+    "noFavorites": "No favorite commands",
+    "loading": "Loading..."
+  },
+  "sections": {
+    "examples": "Examples",
+    "tips": "Tips",
+    "errors": "Common Errors",
+    "syntax": "Syntax",
+    "description": "Description"
+  },
+  "difficulty": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "settings": {
+    "language": "Language",
+    "theme": "Theme",
+    "about": "About App",
+    "version": "Version"
+  }
+}

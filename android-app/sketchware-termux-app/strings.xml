@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Termux Learning</string>
+    <string name="app_name_ar">تعلم Termux</string>
+
+    <!-- Main Activity -->
+    <string name="title_home">الرئيسية</string>
+    <string name="title_home_en">Home</string>
+    <string name="search_hint">ابحث عن أمر...</string>
+    <string name="search_hint_en">Search for a command...</string>
+
+    <!-- Categories -->
+    <string name="category_linux">استخدام لينكس الأساسي</string>
+    <string name="category_linux_en">Basic Linux Usage</string>
+    <string name="category_package">إدارة الحزم</string>
+    <string name="category_package_en">Package Management</string>
+    <string name="category_scripting">البرمجة والسكريبتات</string>
+    <string name="category_scripting_en">Programming & Scripting</string>
+    <string name="category_networking">الشبكات والاتصال</string>
+    <string name="category_networking_en">Networking & Connectivity</string>
+    <string name="category_api">واجهة Termux API</string>
+    <string name="category_api_en">Termux API</string>
+    <string name="category_server">الخوادم والويب</string>
+    <string name="category_server_en">Servers & Web</string>
+    <string name="category_gui">الواجهة الرسومية</string>
+    <string name="category_gui_en">Linux GUI</string>
+    <string name="category_custom">التخصيص والإعدادات</string>
+    <string name="category_custom_en">Customization & Settings</string>
+    <string name="category_docker">Docker والحاويات</string>
+    <string name="category_docker_en">Docker & Containers</string>
+    <string name="category_monitoring">المراقبة والأداء</string>
+    <string name="category_monitoring_en">Monitoring & Performance</string>
+
+    <!-- Commands -->
+    <string name="command_ls">قائمة الملفات</string>
+    <string name="command_ls_en">List Files</string>
+    <string name="command_cd">تغيير المجلد</string>
+    <string name="command_cd_en">Change Directory</string>
+    <string name="command_mkdir">إنشاء مجلد</string>
+    <string name="command_mkdir_en">Make Directory</string>
+    <string name="command_rm">حذف الملفات</string>
+    <string name="command_rm_en">Remove Files</string>
+    <string name="command_cp">نسخ الملفات</string>
+    <string name="command_cp_en">Copy Files</string>
+    <string name="command_mv">نقل الملفات</string>
+    <string name="command_mv_en">Move Files</string>
+
+    <!-- Actions -->
+    <string name="action_copy">نسخ</string>
+    <string name="action_copy_en">Copy</string>
+    <string name="action_share">مشاركة</string>
+    <string name="action_share_en">Share</string>
+    <string name="action_favorite">أضف إلى المفضلة</string>
+    <string name="action_favorite_en">Add to Favorites</string>
+    <string name="action_remove_favorite">إزالة من المفضلة</string>
+    <string name="action_remove_favorite_en">Remove from Favorites</string>
+    <string name="action_search">بحث</string>
+    <string name="action_search_en">Search</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="action_settings_en">Settings</string>
+
+    <!-- Messages -->
+    <string name="msg_copied">تم النسخ إلى الحافظة</string>
+    <string name="msg_copied_en">Copied to clipboard</string>
+    <string name="msg_added_favorite">تمت الإضافة إلى المفضلة</string>
+    <string name="msg_added_favorite_en">Added to favorites</string>
+    <string name="msg_removed_favorite">تمت الإزالة من المفضلة</string>
+    <string name="msg_removed_favorite_en">Removed from favorites</string>
+    <string name="msg_no_results">لا توجد نتائج</string>
+    <string name="msg_no_results_en">No results found</string>
+    <string name="msg_loading">جاري التحميل...</string>
+    <string name="msg_loading_en">Loading...</string>
+    <string name="msg_error">حدث خطأ</string>
+    <string name="msg_error_en">An error occurred</string>
+
+    <!-- Sections -->
+    <string name="section_examples">أمثلة</string>
+    <string name="section_examples_en">Examples</string>
+    <string name="section_tips">نصائح</string>
+    <string name="section_tips_en">Tips</string>
+    <string name="section_errors">الأخطاء الشائعة</string>
+    <string name="section_errors_en">Common Errors</string>
+    <string name="section_syntax">الصيغة</string>
+    <string name="section_syntax_en">Syntax</string>
+    <string name="section_description">الوصف</string>
+    <string name="section_description_en">Description</string>
+
+    <!-- Difficulty Levels -->
+    <string name="difficulty_beginner">مبتدئ</string>
+    <string name="difficulty_beginner_en">Beginner</string>
+    <string name="difficulty_intermediate">متوسط</string>
+    <string name="difficulty_intermediate_en">Intermediate</string>
+    <string name="difficulty_advanced">متقدم</string>
+    <string name="difficulty_advanced_en">Advanced</string>
+
+    <!-- Settings -->
+    <string name="settings_language">اللغة</string>
+    <string name="settings_language_en">Language</string>
+    <string name="settings_theme">المظهر</string>
+    <string name="settings_theme_en">Theme</string>
+    <string name="settings_sync">المزامنة</string>
+    <string name="settings_sync_en">Sync</string>
+    <string name="settings_about">حول التطبيق</string>
+    <string name="settings_about_en">About App</string>
+    <string name="settings_arabic">العربية</string>
+    <string name="settings_english">English</string>
+    <string name="settings_light">فاتح</string>
+    <string name="settings_light_en">Light</string>
+    <string name="settings_dark">داكن</string>
+    <string name="settings_dark_en">Dark</string>
+
+    <!-- Favorites -->
+    <string name="title_favorites">المفضلة</string>
+    <string name="title_favorites_en">Favorites</string>
+    <string name="msg_no_favorites">لا توجد أوامر مفضلة</string>
+    <string name="msg_no_favorites_en">No favorite commands</string>
+
+    <!-- Search -->
+    <string name="title_search">البحث</string>
+    <string name="title_search_en">Search</string>
+    <string name="search_history">سجل البحث</string>
+    <string name="search_history_en">Search History</string>
+
+    <!-- About -->
+    <string name="about_version">الإصدار</string>
+    <string name="about_version_en">Version</string>
+    <string name="about_author">المطور</string>
+    <string name="about_author_en">Developer</string>
+    <string name="about_description">تطبيق شامل لتعلم أوامر Termux مع واجهة Material Design احترافية</string>
+    <string name="about_description_en">Comprehensive app for learning Termux commands with professional Material Design interface</string>
+
+</resources>

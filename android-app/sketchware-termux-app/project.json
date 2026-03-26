@@ -1,0 +1,125 @@
+{
+  "project": {
+    "id": "termux_learning_app",
+    "name": "Termux Learning",
+    "packageName": "com.termux.learning",
+    "versionCode": 1,
+    "versionName": "1.0.0",
+    "minSdk": 21,
+    "targetSdk": 33,
+    "compileSdk": 33,
+    "appIcon": "ic_launcher",
+    "appTheme": "@style/AppTheme",
+    "orientation": "portrait",
+    "supportRtl": true,
+    "description": "تطبيق شامل لتعلم أوامر Termux - Comprehensive Termux Learning App",
+    "author": "Manus AI",
+    "createdDate": "2026-03-26",
+    "lastModified": "2026-03-26"
+  },
+  "screens": [
+    {
+      "id": "MainActivity",
+      "name": "الرئيسية",
+      "type": "activity",
+      "layout": "activity_main",
+      "description": "شاشة العرض الرئيسية مع الفئات"
+    },
+    {
+      "id": "CategoryActivity",
+      "name": "الفئة",
+      "type": "activity",
+      "layout": "activity_category",
+      "description": "شاشة عرض الأوامر في الفئة"
+    },
+    {
+      "id": "CommandDetailActivity",
+      "name": "تفاصيل الأمر",
+      "type": "activity",
+      "layout": "activity_command_detail",
+      "description": "شاشة تفاصيل الأمر الكاملة"
+    },
+    {
+      "id": "SearchActivity",
+      "name": "البحث",
+      "type": "activity",
+      "layout": "activity_search",
+      "description": "شاشة البحث المتقدم"
+    },
+    {
+      "id": "FavoritesActivity",
+      "name": "المفضلة",
+      "type": "activity",
+      "layout": "activity_favorites",
+      "description": "شاشة الأوامر المفضلة"
+    },
+    {
+      "id": "SettingsActivity",
+      "name": "الإعدادات",
+      "type": "activity",
+      "layout": "activity_settings",
+      "description": "شاشة الإعدادات واللغة"
+    }
+  ],
+  "dependencies": {
+    "androidx": [
+      "androidx.appcompat:appcompat:1.6.1",
+      "androidx.constraintlayout:constraintlayout:2.1.4",
+      "androidx.recyclerview:recyclerview:1.3.0",
+      "androidx.cardview:cardview:1.0.0",
+      "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    ],
+    "material": [
+      "com.google.android.material:material:1.9.0"
+    ],
+    "firebase": [
+      "com.google.firebase:firebase-database:20.2.1",
+      "com.google.firebase:firebase-auth:22.1.2",
+      "com.google.firebase:firebase-analytics:21.3.0"
+    ],
+    "database": [
+      "androidx.room:room-runtime:2.5.1",
+      "androidx.room:room-compiler:2.5.1"
+    ],
+    "networking": [
+      "com.squareup.okhttp3:okhttp:4.11.0",
+      "com.squareup.retrofit2:retrofit:2.9.0",
+      "com.squareup.retrofit2:converter-gson:2.9.0"
+    ],
+    "other": [
+      "com.google.code.gson:gson:2.10.1",
+      "com.github.bumptech.glide:glide:4.15.1"
+    ]
+  },
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "features": {
+    "database": {
+      "sqlite": true,
+      "firebase": true,
+      "room": true
+    },
+    "ui": {
+      "materialDesign": true,
+      "rtlSupport": true,
+      "darkMode": true,
+      "animations": true
+    },
+    "functionality": {
+      "search": true,
+      "favorites": true,
+      "sharing": true,
+      "copyToClipboard": true,
+      "offline": true,
+      "sync": true
+    },
+    "languages": [
+      "ar",
+      "en"
+    ]
+  }
+}

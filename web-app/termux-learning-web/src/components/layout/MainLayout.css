@@ -1,0 +1,44 @@
+.main-layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+
+.app-bar {
+  background-color: #000000 !important;
+  border-bottom: 2px solid #00ff00 !important;
+  box-shadow: 0 2px 10px rgba(0, 255, 0, 0.2);
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00ff00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .app-title {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+}
